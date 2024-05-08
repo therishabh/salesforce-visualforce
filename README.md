@@ -4,7 +4,7 @@
 - Visualforce is the component-based user interface framework for the Force.com platform.
 - The framework includes a tag-based markup language, similar to HTML. So just like in HTML we have tags like <body> tag and p tag etc. Similarly in visualforce we have tags.
 
-**When you should use Visualforce ?**
+### When you should use Visualforce ?
 Visualforce consists of a tag-based markup language that gives developers a more powerful way of building applications and customizing the Salesforce user interface. With Visualforce you can:
 - You can override the standard salesforce pages with Visualforce page.
 - Create your own custom flow control through an application.
