@@ -10,6 +10,13 @@ Visualforce consists of a tag-based markup language that gives developers a more
 - Create your own custom flow control through an application.
 - Define navigation patterns and data-specific rules for optimal, efficient application interaction.
 
+### Advantages of Visualforce
+- Visualforce is a Model View Controller (MVC) development style.
+- Visualforce Editor panel is present for every visualforce page.
+- Visualforce has Huge number of components.
+- Can be integrated with HTML, CSS, Ajax, Query.
+- Visualforce is flexible and customizable with web technologies.
+
 ### Visualforce tags can be divided to different types:
 - Input tags
 - Output tags
