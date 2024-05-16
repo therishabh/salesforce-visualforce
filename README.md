@@ -3,6 +3,11 @@
 ## What is Visualforce ?
 - Visualforce is the component-based user interface framework for the Force.com platform.
 - The framework includes a tag-based markup language, similar to HTML. So just like in HTML we have tags like <body> tag and p tag etc. Similarly in visualforce we have tags.
+- A web development framework that allows you to create custom user interfaces that can be used in the Lightning Platform
+- Each Visualforce page can be accessible by a unique URL
+- Visualforce Page uses tag based markup which is similar to HTML. Each tag has its own properties and corresponds to a user interface element such a block, section, list, row, etc.
+- Lot of flexibility as VF markup can easily be mixed with generic HTML, Javascript, CSS which in turn provides flexibility in creating custom screens for users.
+- Visualfofce has nearly 150 built in components that you can use on the page to build custom screens & pages.
 
 ### When you should use Visualforce ?
 Visualforce consists of a tag-based markup language that gives developers a more powerful way of building applications and customizing the Salesforce user interface. With Visualforce you can:
@@ -36,4 +41,10 @@ Visualforce consists of a tag-based markup language that gives developers a more
 - <apex:pageBlockSectionItem>
 
 ### <apex:page>
-The basic tag that creates a visualforce page. Can be used only once in a page and all visulforce Tags have to be enclosed in this tag.
+The basic tag that creates a visualforce page. **Can be used only once in a page** and all visulforce Tags **have to be enclosed in this tag**.
+
+```java
+<apex:page>
+  <h1>Hello Title </h1>
+</apex:page>
+```
