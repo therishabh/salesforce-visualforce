@@ -52,7 +52,7 @@ The basic tag that creates a visualforce page. **Can be used only once in a page
 ### apex:pageblock
 A tag that creates an area within the page where multiple sections can be created and fields, buttons, tables or links can be displayed. It by default inherits the standard salesforce page style.
 
-### <apex: pageBlockSection>
+### apex: pageBlockSection
 This tag helps to create a section inside a page block.
 Multiple sections can be created in a page block and each section can be used to display any fields (input/output).
 
@@ -74,9 +74,27 @@ Multiple sections can be created in a page block and each section can be used to
 </apex:page>
 ```
 
+### apex:pageBlockButton
+Whenever < apex:commandbutton> tag is used, a button is created in a based on the position where the tag is written. But most of the times, we may want to place the buttons on the top or bottom of the page. This can be achieved with the help of this tag.
 
 
+## apex:pageMeaage
+This component should be used for presenting custom messages in the page using the Salesforce pattern for errors, warnings and other types of messages for a given severity. See also the pageMessages component.
+There is one required attribute for this tag named Severity.
 
+Severity: The severity of the message. 
+**Severity:**  Values supported are: 'confirm', 'info', 'warning', 'error' 
+**Strength:** The strength of the message. This controls the visibility and size of the icon displayed next to the message. Use 0 for no image, or 1-3 (highest strength, largest icon).
+
+```html
+<apex:page>
+<apex:pageBlock>
+    <apex:pageMessage summary="validation message" severity="confirm" strength="2"></apex:pageMessage>
+</apex:pageBlock>
+</apex:page>
+```
+
+![Screenshot 2024-05-17 at 3 21 45 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/2da064b3-3803-48fc-afca-472d63b6232a)
 
 
 
