@@ -48,3 +48,60 @@ The basic tag that creates a visualforce page. **Can be used only once in a page
   <h1>Hello Title </h1>
 </apex:page>
 ```
+
+### apex:pageblock
+A tag that creates an area within the page where multiple sections can be created and fields, buttons, tables or links can be displayed. It by default inherits the standard salesforce page style.
+
+### <apex: pageBlockSection>
+This tag helps to create a section inside a page block.
+Multiple sections can be created in a page block and each section can be used to display any fields (input/output).
+
+```html
+<apex:page>
+   <apex:pageBlock title="Block One">
+    <apex:pageBlockSection title="Section One Title" columns="3">
+       <apex:pageBlockSectionItem labelTitle="item1 title">Item 1 here</apex:pageBlockSectionItem>
+       <apex:pageBlockSectionItem labelTitle="item2 title">Item 2 here</apex:pageBlockSectionItem>
+       <apex:pageBlockSectionItem labelTitle="item3 title">Item 3 here</apex:pageBlockSectionItem>
+     </apex:pageBlockSection>
+       <apex:pageBlockSection title="Section Two Title" columns="4">
+       <apex:pageBlockSectionItem labelTitle="item1 title">Item 1 here</apex:pageBlockSectionItem>
+       <apex:pageBlockSectionItem labelTitle="item2 title">Item 2 here</apex:pageBlockSectionItem>
+       <apex:pageBlockSectionItem labelTitle="item3 title">Item 3 here</apex:pageBlockSectionItem>
+       <apex:pageBlockSectionItem labelTitle="item4 title">Item 4 here</apex:pageBlockSectionItem>
+       </apex:pageBlockSection>
+   </apex:pageBlock>
+</apex:page>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
