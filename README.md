@@ -109,7 +109,11 @@ Example of input tags:
 - <apex:inputTextArea>
 ```
 
-
+## Output tag and OutputLink tag
+**<apex:outputLabel> :**
+A label for an input or output field. Use this component to provide a label for a controller method that does not correspond to a field on a Salesforce object.
+**<apex:outputLink>:**
+This tag creates a link to a URL. The below code displays the text www.salesforce.com as a hyperlink text on the visual force page and when this link is clicked the URL specified in the value attribute will be opened. The body of an < apex:outputLink > can be text or an image
 
 
 
