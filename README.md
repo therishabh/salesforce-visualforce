@@ -78,7 +78,7 @@ Multiple sections can be created in a page block and each section can be used to
 Whenever < apex:commandbutton> tag is used, a button is created in a based on the position where the tag is written. But most of the times, we may want to place the buttons on the top or bottom of the page. This can be achieved with the help of this tag.
 
 
-## apex:pageMeaage
+### apex:pageMeaage
 This component should be used for presenting custom messages in the page using the Salesforce pattern for errors, warnings and other types of messages for a given severity. See also the pageMessages component.
 There is one required attribute for this tag named Severity.
 
@@ -97,6 +97,17 @@ Severity: The severity of the message.
 ![Screenshot 2024-05-17 at 3 21 45 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/2da064b3-3803-48fc-afca-472d63b6232a)
 
 
+### Input Tags
+Input tags used to capture user input for any standard or custom object field, and respects any metadata that is set on the field definition, such as whether the field is required or unique, or whether the current user has permission to view or edit it.
+Example of input tags:
+```html
+- <apex:inputsecret>
+- <apex:inputcheckbox>
+- <apex:inputFile>
+- <apex:inputHidden>
+- <apex:inputField>
+- <apex:inputTextArea>
+```
 
 
 
