@@ -116,9 +116,28 @@ A label for an input or output field. Use this component to provide a label for 
 This tag creates a link to a URL. The below code displays the text www.salesforce.com as a hyperlink text on the visual force page and when this link is clicked the URL specified in the value attribute will be opened. The body of an < apex:outputLink > can be text or an image
 
 
+#### Q. What is the architechture of Salesforce ? or MVC Architecture ?
+Ans : <br/>
+![Screenshot 2024-06-09 at 2 26 49 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/3a18b497-1a43-4bb6-8f37-90eea9a03eb1)
 
+Detailed examples:<br/><br/>
+Examples of M : (Model)<br/>
+object, Relationship, Field etc<br/><br/>
+Examples of V: (View)<br/>
+Logo, Tab, Button, Link, Page layout, Visualforce page etc<br/><br/>
+Examples of C: (Controller)<br/>
+APEX code, WER, PB, Trigger, VR, AP etc<br/><br/>
 
+IQ: TCS
+#### Q. What is force.com ? <br/>
+Ans : <br/>
+Force.com = platform<br/>
+Salesforce.com = software (SFDC)<br/><br/>
+(but everything belongs to company Salesforce)<br/><br/>
 
+Force.com is example of PAAS<br/>
+Salesforce.com is example of SAAS<br/>
+(IAAS = not useful for our career)<br/>
 
 
 
