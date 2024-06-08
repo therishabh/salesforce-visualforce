@@ -138,15 +138,64 @@ Salesforce.com = software (SFDC)<br/><br/>
 Force.com is example of PAAS<br/>
 Salesforce.com is example of SAAS<br/>
 (IAAS = not useful for our career)<br/>
+<br/>
+<br/>
+Extra point:<br/><br/>
+Whenever we do coding in SF, actually, indirectly we are working on Force.com platform<br/>
+Dev console = Force.com IDE<br/><br/>
+So we can conclude,<br/><br/>
+admins/clients work on = salesforce.com layer<br/>
+devs work on = salesforce.com and force.com layer<br/>
 
 
+https://chromewebstore.google.com/detail/salesforce-advanced-code/lnkgcmpjkkkeffambkllliefdpjdklmi?hl=en&pli=1
 
 
+#### Q. Why to use Visualforce page in project ?
+Ans: <br/>
+To work on complex pages.<br/><br/>
+To display records from multiple objects.<br/><br/>
+When we want more than 2 column display of data. (IQ)<br/><br/>
+To edit multiple records at the same time.<br/><br/>
+To create multiple records at the same time.<br/><br/>
+Custom analytics capabilities.<br/><br/>
+(Show some advance charts etc using JS code. Ex: Radar chart)<br/><br/>
+Show lightning component in Classic page. (Bonus topic)<br/><br/>
+Moral:<br/>
+When u cant do the needed things in "declarative" mode (standard record page/form given by SF), then opt VFP.<br/><br/>
+
+------------------------ 
+
+IQ / JQ: IMP<br/>
+Declarative / Config approach - working on project without code<br/>
+Non declarative / Customization approach - working on project with code<br/><br/>
+Admin syllabus = declarative<br/>
+Dev syllabus = non declarative<br/>
+
+#### What is VFP ?
+A proprietary web development language created by Salesforce.com<br/>
+Syntax for this language is like HTML.<br/>
+Fits into the "View" level of MVC.<br/>
+Allows developers to build custom web pages.<br/>
+Not intended for pure custom website creation, only useful internal work of SF.<br/>
+<br/>
+Strength: It allows developers to easily create a complete custom page that has the exact look and feel like a "standard Salesforce page" <br/>
 
 
+Every Visualforce page start with `<Apex:Page>`
+
+![Screenshot 2024-06-09 at 5 05 58 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/2e964d8e-bddf-4732-b581-a97b5eb7b0ff)
+
+Create Visualforce Page:
+![Screenshot 2024-06-09 at 5 08 15 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/3b7f579f-20c7-458f-b777-a17e3fc6d0a9)
 
 
+>> How you'll check is opened page is visualforce page or normal ordinary page, so for this we need to check in URL, if in URL /apex/ keyword exists that means it is visualforce page.
 
+**Quiz: Fill in the blank**<br/>
+The way, it's hard to imagine a Trigger without **xxxx** (which gives business logic to Irigger), on the same note, it's hard to imagine a VEP in RTP (real time project) without a "Controller"!!
+
+**xxxx => Apex Class**
 
 
 
