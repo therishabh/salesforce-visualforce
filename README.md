@@ -94,8 +94,9 @@ Severity: The severity of the message.
 </apex:page>
 ```
 
+---------------------------
 ![Screenshot 2024-05-17 at 3 21 45 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/2da064b3-3803-48fc-afca-472d63b6232a)
-
+---------------------------
 
 ### Input Tags
 Input tags used to capture user input for any standard or custom object field, and respects any metadata that is set on the field definition, such as whether the field is required or unique, or whether the current user has permission to view or edit it.
