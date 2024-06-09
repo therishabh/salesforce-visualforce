@@ -378,7 +378,7 @@ when error will come ?<br/>
 **Syntax:**<br/>
 
 `
-<apex:page standardController="Account"></apex:page>
+<apex:page standardController="Account" extension="Class_1, Class_2, Class_3"></apex:page>
 `
 
 
