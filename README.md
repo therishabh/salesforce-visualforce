@@ -269,7 +269,12 @@ Note: At a time, only 1 object can be used. Either standard or custom.
 ```
 
 Output : 
+<img width="1440" alt="Screenshot 2024-06-09 at 6 23 44 AM" src="https://github.com/therishabh/salesforce-visualforce/assets/7955435/83614ae1-a1b4-4bcc-8c81-2629b6707c86">
+
 ![Screenshot 2024-06-09 at 5 57 02 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/a668fcfb-78d0-47fd-831f-1688478ddf87)
+
+Create a visualforce page tab and add it into our app.
+<img width="1440" alt="Screenshot 2024-06-09 at 6 29 27 AM" src="https://github.com/therishabh/salesforce-visualforce/assets/7955435/d1bf9e2a-c339-430f-a352-c11cf2c961e8">
 
 
 
