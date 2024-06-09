@@ -381,8 +381,73 @@ when error will come ?<br/>
 <apex:page standardController="Account" extension="Class_1, Class_2, Class_3"></apex:page>
 `
 
+**Example:**
+```apex
+<apex:page standardController="Account" extensions="MyControllerExtensionExample" >
+    <apex:form>
+    	<apex:pageBlock title="Page Block 1">
+        	<apex:pageBlockSection title="Page Block Section 1 | Custom Controller Example" columns="2">
+            	<apex:pageBlockSectionItem>
+                	<apex:commandButton value="Greeting" Action="{!ShowGreeting}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:outputLabel>{!message}</apex:outputLabel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Page Block 2">
+        	<apex:pageBlockSection title="Page Block Section 2 | Standard Controller Example" columns="2">
+            	<apex:pageBlockSectionItem>
+                    New Company : <apex:inputField value="{!Account.name}" required="false"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                    <apex:commandButton value="Standard Save" action="{!save}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Page Block 3">
+        	<apex:pageBlockSection title="Page Block Section 3 | Using Custom code for Save" columns="2">
+            	<apex:pageBlockSectionItem>
+                    New Company : <apex:inputText value="{!VariableForStoringAccountName}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                    <apex:commandButton value="Custom Save" action="{!mysave}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>
+```
 
+```apex
+public class MyControllerExtensionExample {
+    
+    public string VariableForStoringAccountName {set; get;}
+    public string message {set; get;}
+    
+    public MyControllerExtensionExample(ApexPages.StandardController stdController) {
+        // any code
+    }
+    
+    public void ShowGreeting() {
+        message = 'Welcome to Extension Demo';
+    }
+    
+    public void mysave() {
+        Account acc = new Account();
+        acc.Name = VariableForStoringAccountName;
+        acc.Industry = 'Chemical';
+        
+        insert acc;
+    }
+}
+```
 
+#### IQ: TCS :If ur calling an element (function/method) present in the Controllers to VF page, and assume u r having 3 such extension classes in which that element is present with EXACT SAME NAME - then can u tell me, from which class the element will be called? Will it give any error ?
+Ans : It will not give an error, and function will execute from left to right class, if that function will find in first class then it'll execute and leave next classes.
 
 
 
