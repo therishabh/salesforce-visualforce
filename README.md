@@ -196,7 +196,85 @@ Create Visualforce Page:
 **Quiz: Fill in the blank**<br/>
 The way, it's hard to imagine a Trigger without **xxxx** (which gives business logic to Irigger), on the same note, it's hard to imagine a VEP in RTP (real time project) without a "Controller"!!
 
+
 **xxxx => Apex Class**
+
+#### What is controller in VFP ?
+The way APEX class gives "Business Logic" to Triggers.<br/>
+Controller gives "Business Logic" + "Data" to VFP.<br/><br/>
+
+> Controller is like a backbone of Visualforce page. because VFP itself is Dumb. it is completly depends on controller.
+
+#### Types of Controllers in VFP ?
+
+1. Standard controller
+2. Custom Controller
+3. Controller Extensions AKA Extensions
+
+(controllers => Backbone!)
+
+#### IQ: Controllers can be what?
+#### Or
+#### what entity can become controller?
+
+1. Object (standard or custom)</br>
+or</br>
+2. Apex class</br></br>
+Nothing else!!
+
+#### Interviewer can ask you, tell me 2 reasons why we need visual force page ?
+- Visualforce pages allow for the creation of custom user interfaces tailored to specific business needs.
+- They enable the incorporation of custom logic and seamless integration with external systems.
+
+#### why we need controller in visualforce page ? one line answer
+A. Controllers are needed in Visualforce pages to handle business logic and manage data interactions between the user interface and Salesforce.
+
+### Types of Controllers:
+1. Standard Controllers :
+- It deals with Standard as well as Custom objects.
+- We can write the standard object name or custom object name as a parameter for fetching the records from the database
+- They provide the standard functions like save,delete or create records.
+- Standard controllers are very helpful in designing a UI for the (custom) pages
+- Due to this, we can create a complete page with lessefforts using the controllers
+
+
+**Syntax :**
+<apex:page StandardController="Account">     This is for accessing STANDARD OBJECT
+<apex:page StandardController="Pen__c">     This is for accessing CUSTOM OBJECT
+
+> As we know visual force page is kind of less used in the market in that way Standard controller is rarely used in the market. You can say standard controller almost useless because of some limitations 
+
+**Standard controller :**
+When our VFP is dependent on any controller which is actually an object (standard or custom, does not matter) then that controller is called as Standard Controller.<br/><br/>
+Note: At a time, only 1 object can be used. Either standard or custom.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
