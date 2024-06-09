@@ -238,9 +238,9 @@ A. Controllers are needed in Visualforce pages to handle business logic and mana
 - Due to this, we can create a complete page with lessefforts using the controllers
 
 
-**Syntax :**
-<apex:page StandardController="Account">     This is for accessing STANDARD OBJECT
-<apex:page StandardController="Pen__c">     This is for accessing CUSTOM OBJECT
+**Syntax :**</br>
+<apex:page StandardController="Account">     This is for accessing STANDARD OBJECT</br>
+<apex:page StandardController="Pen__c">     This is for accessing CUSTOM OBJECT</br></br>
 
 > As we know visual force page is kind of less used in the market in that way Standard controller is rarely used in the market. You can say standard controller almost useless because of some limitations 
 
@@ -248,7 +248,25 @@ A. Controllers are needed in Visualforce pages to handle business logic and mana
 When our VFP is dependent on any controller which is actually an object (standard or custom, does not matter) then that controller is called as Standard Controller.<br/><br/>
 Note: At a time, only 1 object can be used. Either standard or custom.
 
-
+```apex
+<apex:page standardController="Account">
+    <apex:form>
+        <apex:pageBlock title="My Content">
+            <apex:pageBlockButtons>
+            	<apex:commandButton action="(!save}" value="Save Me"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="My Content Section" columns="2"> 
+                <apex:inputField value="(!Account.name}" required="false"></apex:inputField>
+            	<apex:inputField value=" {!Account. fax)" /> 
+                <apex:inputField value=" {!Account. phone}" />
+            	<apex:inputField value=" (!Account .accountNumber }"/> 
+                <apex:inputField value=" (!Account.industry}" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
+```
 
 
 
