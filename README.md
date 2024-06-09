@@ -253,14 +253,14 @@ Note: At a time, only 1 object can be used. Either standard or custom.
     <apex:form>
         <apex:pageBlock title="My Content">
             <apex:pageBlockButtons>
-            	<apex:commandButton action="(!save}" value="Save Me"/>
+            	<apex:commandButton action="{!save}" value="Save Me"/>
             </apex:pageBlockButtons>
             
             <apex:pageBlockSection title="My Content Section" columns="2"> 
-                <apex:inputField value="(!Account.name}" required="false"></apex:inputField>
-            	  <apex:inputField value="{!Account. fax)" /> 
-                <apex:inputField value="{!Account. phone}" />
-            	  <apex:inputField value="{!Account.accountNumber}"/> 
+                <apex:inputField value="{!Account.name}" required="false"></apex:inputField>
+            	<apex:inputField value="{!Account.fax}" /> 
+                <apex:inputField value="{!Account.phone}" />
+            	<apex:inputField value="{!Account.accountNumber}"/> 
                 <apex:inputField value="{!Account.industry}" />
             </apex:pageBlockSection>
         </apex:pageBlock>
