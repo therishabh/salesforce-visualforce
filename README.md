@@ -258,16 +258,18 @@ Note: At a time, only 1 object can be used. Either standard or custom.
             
             <apex:pageBlockSection title="My Content Section" columns="2"> 
                 <apex:inputField value="(!Account.name}" required="false"></apex:inputField>
-            	<apex:inputField value=" {!Account. fax)" /> 
-                <apex:inputField value=" {!Account. phone}" />
-            	<apex:inputField value=" (!Account .accountNumber }"/> 
-                <apex:inputField value=" (!Account.industry}" />
+            	  <apex:inputField value="{!Account. fax)" /> 
+                <apex:inputField value="{!Account. phone}" />
+            	  <apex:inputField value="{!Account.accountNumber}"/> 
+                <apex:inputField value="{!Account.industry}" />
             </apex:pageBlockSection>
         </apex:pageBlock>
     </apex:form>
 </apex:page>
 ```
 
+Output : 
+![Screenshot 2024-06-09 at 5 57 02 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/a668fcfb-78d0-47fd-831f-1688478ddf87)
 
 
 
