@@ -230,7 +230,7 @@ Nothing else!!
 A. Controllers are needed in Visualforce pages to handle business logic and manage data interactions between the user interface and Salesforce.
 
 ### Types of Controllers:
-1. Standard Controllers :
+### 1. Standard Controllers :
 - It deals with Standard as well as Custom objects.
 - We can write the standard object name or custom object name as a parameter for fetching the records from the database
 - They provide the standard functions like save,delete or create records.
@@ -269,19 +269,60 @@ Note: At a time, only 1 object can be used. Either standard or custom.
 ```
 
 Output : 
-<img width="1440" alt="Screenshot 2024-06-09 at 6 23 44 AM" src="https://github.com/therishabh/salesforce-visualforce/assets/7955435/83614ae1-a1b4-4bcc-8c81-2629b6707c86">
+<img width="1440"  alt="Screenshot 2024-06-09 at 6 23 44 AM" src="https://github.com/therishabh/salesforce-visualforce/assets/7955435/83614ae1-a1b4-4bcc-8c81-2629b6707c86">
 
 ![Screenshot 2024-06-09 at 5 57 02 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/a668fcfb-78d0-47fd-831f-1688478ddf87)
 
 Create a visualforce page tab and add it into our app.
 <img width="1440" alt="Screenshot 2024-06-09 at 6 29 27 AM" src="https://github.com/therishabh/salesforce-visualforce/assets/7955435/d1bf9e2a-c339-430f-a352-c11cf2c961e8">
 
+#### Issues with Standard Controller ?
+1. We can not show data from multiple objects
+2. We can not write our logic in some APEX class and call the same when button is pressed
+3. We can not fetch data from database
+4. We can not do any DML
+5. Relationship data fetching process is not feasible.
 
+...lots of limitations
 
+### 2. Custom Controllers :
+- These are written in a class, using apex code
+- These are used when we cant perfoem the needed work using the standard controllers
+- When we want additional functionality in the page, by processing the objects, we need to use Custom Controllers
+- They are used to create rich Ul with complex data sets ete
 
+**Syntax :** <br/>
+<apex:page Controller="MyControllersClass"> These dont use any object names as parameter.<br/><br/>
 
+here,<br/>
+MyControllersClass is an apex class which controls the VF actions and variables
 
+**Example:**
+```apex
+<apex:page controller="ExampleClassForVFP">
+    <apex:form>
+    	<apex:pageBlock title="My Content">
+        	<apex:pageBlockSection title="My Content Section" columns="2">
+            	<apex:outputLabel>Enter Name: </apex:outputLabel>
+                <apex:inputText value="{!userName}" />
+                <apex:commandButton value="Click Me" Action="{!ShowMessage}"/>
+                <apex:outputLabel>{!message}</apex:outputLabel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
+```
 
+```apex
+public class ExampleClassForVFP {
+    public String userName {set;get;}
+    public string message{set;get;}
+    
+    public void ShowMessage(){
+        message = 'Welcome '+ userName;
+    }
+}
+```
 
 
 
