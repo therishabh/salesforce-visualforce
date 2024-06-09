@@ -450,7 +450,9 @@ public class MyControllerExtensionExample {
 Ans : It will not give an error, and function will execute from left to right class, if that function will find in first class then it'll execute and leave next classes.
 
 
+![Screenshot 2024-06-09 at 9 24 43 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/db4aff20-ebda-494a-9e73-f925e9642f52)
 
+![Screenshot 2024-06-09 at 9 25 12 AM](https://github.com/therishabh/salesforce-visualforce/assets/7955435/7241df92-acfc-4411-b3ae-c6a6c08b1cc5)
 
 
 
