@@ -239,8 +239,8 @@ A. Controllers are needed in Visualforce pages to handle business logic and mana
 
 
 **Syntax :**</br>
-<apex:page StandardController="Account">     This is for accessing STANDARD OBJECT</br>
-<apex:page StandardController="Pen__c">     This is for accessing CUSTOM OBJECT</br></br>
+`<apex:page StandardController="Account">`     This is for accessing STANDARD OBJECT</br>
+`<apex:page StandardController="Pen__c">`      This is for accessing CUSTOM OBJECT</br></br>
 
 > As we know visual force page is kind of less used in the market in that way Standard controller is rarely used in the market. You can say standard controller almost useless because of some limitations 
 
@@ -292,7 +292,7 @@ Create a visualforce page tab and add it into our app.
 - They are used to create rich Ul with complex data sets ete
 
 **Syntax :** <br/>
-<apex:page Controller="MyControllersClass"> These dont use any object names as parameter.<br/><br/>
+`<apex:page Controller="MyControllersClass">` These dont use any object names as parameter.<br/><br/>
 
 here,<br/>
 MyControllersClass is an apex class which controls the VF actions and variables
@@ -324,13 +324,42 @@ public class ExampleClassForVFP {
 }
 ```
 
+#### IQ: TCS
+`<apex:inputText> Vs <apex:inputField>` ? <br/>
+Ans:<br/>
+**inputField -** "Copy" the field from that object which is mentioned as controller and display on a VE page | like сору paste work <br/>
+**inputText -** it will help to create a field from scratch | stand alone field | new creation | not connected to any object.<br/>
+<br/>
+<br/>
+Means, after using `<inputText>`, we have to take extra step like ######## to ensure data will go to DB, Which we don't need in case of `<inputField>`<br/><br/>
+####### => DML
+<br/>
+<br/>
+<br/>
+
+#### IQ: Samsung
+Benefits of using Command Button?<br/>
+<br/>
+1. After pressed, it will send VFP data to server (Sync concept)
+2. It will call associated function
+3. Update in dack wiem latest data present im server. it will bring fresh data! (Sync concept)
 
 
-
-
-
-
-
+#### IQ: What are properties in Salesforce?
+(the key players in the F'end to B'end and B'end to F'end transfer!)<br/><br/>
+Set = we are giving rights to VFP to set values in the related variables present in APEX Class (frontend to backend) <br/><br/>
+Get = we are giving rights to VFP to get values of the related variables on VFP present in APEX (backend to frontend) <br/><br/>
+Example:<br/>
+public string UserName {set;get;} <br/>
+public string message {set; get;}<br/>
+<br/>
+<br/>
+public string UserName {set;}<br/>
+when error will come ?
+<br/>
+<br/>
+public string UserName {get;}<br/>
+when error will come ?
 
 
 
