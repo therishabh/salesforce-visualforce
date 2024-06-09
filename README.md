@@ -359,12 +359,27 @@ when error will come ?
 <br/>
 <br/>
 public string UserName {get;}<br/>
-when error will come ?
+when error will come ?<br/>
+<br/>
+<br/>
+**IQ: Morgan Stanley: What types of binding present in VF:** <br/>
+1. Data binding
+2. Action binding
+3. Component binding (rarely user, almost outdated) (see below code just for over view) (people are using Ltng components)
 
 
+### 3. Extension Controllers :
+- It gives the benefit of Standard as well as Custom Controllers.
+- We canuse the fascility or ease that we get in Standard controller as well as we can get the flexibility provided by the customr controller.
+- We can get all these benefits in one single page using the Controller Extension
+- We cant use more than 1 object in Standard Controller,as well as we cant use more than 1 class in Custome controller. But using Controller Extension, we can go beyond these limitiations.
+- Controller Extenstions are widely used in higher level Visual force page where we want to implement complex kind of logic n produce the related UI
+<br/>
+**Syntax:**<br/>
 
-
-
+`
+<apex:page standardController="Account"></apex:page>
+`
 
 
 
